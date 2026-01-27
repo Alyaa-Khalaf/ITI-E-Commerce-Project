@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --button-color:#213448;
+
+}
+body{
+    background-color:#e3e9ec ; 
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
+}
+
+#success-regiter ,#failed-regiter,#excit-user{
+    text-align: center;
+    margin:50px auto;
+    color:#030000;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+    width:220px;
+    height:50px;
+    border:none;
+    border-radius: 35px;
+    display: none;
+}
+#success-regiter{
+ background-color: rgb(204, 246, 204);
+}
+#failed-regiter{
+     background-color: rgb(252, 144, 144);
+}
+#excit-user{
+    background-color: #ffe2af;
+}
+#register-form,
+#login-form{
+    background-color: white;
+     display: flex;
+    flex-direction:column;
+    text-align: center;
+    gap:10px;
+    margin:100px auto;
+    padding:30px;
+    min-height: 200px;
+    max-width:550px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+#name-error,#email-error,#phone-error,#password-type,#password-error{
+ display: none;
+}
+.form-header{
+    font-size: 20px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+#register-form input,#login-form
+input{
+    border:1px solid grey;
+    border-radius: 15px;
+    outline: none;
+    font-size:17px;
+    /* margin-top:15px; */
+    padding:10px;
+}
+#register-form [type='submit'],#login-form [type='submit']{
+     width:120px;
+     height:40px;
+     background-color: var(--button-color);
+     color: white;
+     border-radius: 10px;
+     border:none;
+     font-size: 18px;
+     margin:15px auto; 
+     cursor: pointer;
+     transition: 0.5s ease;
+}
+#register-form [type='submit']:hover{
+    background-color: #eae0cf;
+    color:#000;
+
+}
+#register-form span{
+    color:red;
+    font-weight: 600;
+}
+#register-form label{
+    text-align: left;
+    font-weight: 400;
+}
+.hav-accout{
+    text-align: center;
+}
+
+
+/* customer order */
+#customerOrder h1 {
+     
+        text-align: center;
+        padding-top: 50px;
+}
+
+
+
+
+/* products file style */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px;
+    width:100%;
+    background-color: #296374;
+    font-size: 25px;
+    color:white;
+}
+nav .product-page{
+    font-weight: 600;
+}
+.shopping-cart i{
+   cursor: pointer;
+   transition: 0.4s ease-in;
+
+}
+.shopping-cart i:hover{
+    color:#f96e5b ;
+}
+nav a{
+    color:#fff;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 80%;
+    margin: 0 auto; 
+}
+
+
+#hero article h2{
+    font-size: 45px;
+    margin: 0;
+}
+
+#hero .img-hero{
+    max-width: 650px; 
+}
+#hero img{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
+
+#hero article button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: #f96e5b;
+    cursor: pointer;
+}
+
+ #container,  #container2{
+    display: flex;
+    /* align-items: stretch; */
+    justify-content: center;   
+    gap: 20px;
+    flex-wrap: wrap;       
+    margin: 80px auto;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color:#296374;
+}
+.products {
+    flex: 1  380px;
+    max-width: 400px;
+    box-shadow: 0 20px 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 15px;
+}
+.products h2{
+    color:#213448;
+    font-size:19px ;
+    font-weight: 650;
+}
+.shopping-button{
+    width:180px;
+    margin-top: 10px;
+    background-color: #296374;
+    color:#fff;
+    margin-bottom: 10px;
+    border:none;
+    border-radius: 10px;
+    height:40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.shopping-button:hover{
+    background-color: #ffe2af;
+    color:#000;
+}
+.products .image{
+  width:100%;
+  padding:40px;
+height: 370px;
+
+}
+.products .image img{
+    width:300px;
+    height: 100%;
+    /* object-fit: contain; */
+}
+.price{
+    color:red;
+    font-size: 20px;
+    font-weight: 650;
+}
+
+
+.remove-order{
+    width:140px;
+    height: 40px;
+    border:none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(252, 192, 192);
+    font-size: 19px; 
+    cursor: pointer;
+
+}

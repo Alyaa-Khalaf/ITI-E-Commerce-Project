@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    background: antiquewhite;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+.total-section {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.qty-btn {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background: #ddd;
+}
+
+.qty-value {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.payment-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #219150;
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    border: 1px solid #2c3e50;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#notification {
+    display: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

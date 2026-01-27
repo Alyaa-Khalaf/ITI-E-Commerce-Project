@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart 🛒</title>
+    <link rel="stylesheet" href="../css/cart-page.css">
+
+    <!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AfEU8p8v7yk-dKqYR6IoB7f7fnMUcp3skKhIq8PTE9RpSPVn76fwbw8TYgpkPQCLBcWz5Bnxa2OiZHOr&currency=EUR"></script> 
+
+</head>
+<body>
+
+<nav class="nav">
+    <a href="products.html">← Continue Shopping</a>
+</nav>
+
+<h1>Your Cart 🛒</h1>
+
+<!-- Notification -->
+<div id="notification"></div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+</table>
+
+<div class="total-section">
+    Total Amount: $<span id="grand-total">0.00</span>
+</div>
+
+<div class="payment-box">
+    <h3>Payment Method</h3>
+
+    <label class="payment-option">
+        <input type="radio" name="payMethod" checked onclick="togglePayment('cash')">
+        💵 Cash on Delivery (COD)
+    </label>
+
+    <label class="payment-option">
+        <input type="radio" name="payMethod" onclick="togglePayment('paypal')">
+        💳 PayPal / Credit Card
+    </label>
+
+    <button id="cash-btn" class="checkout-btn" onclick="placeOrder('Cash')">
+        Confirm Order (Cash)
+    </button>
+
+    <div id="paypal-button-container" style="display:none; margin-top:15px;"></div>
+</div>
+
+<!-- External JS -->
+<script src="../js/cart.js" defer></script>
+
+</body>
+</html>
