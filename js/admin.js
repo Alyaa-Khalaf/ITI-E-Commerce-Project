@@ -1,3 +1,7 @@
+// Alyaa Khalaf
+// Implemented full authentication for admin users
+// Added CRUD operations for Products, Categories, and Orders
+
 // =================== 1. ADMIN GUARD ===================
 (function checkAccess() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
