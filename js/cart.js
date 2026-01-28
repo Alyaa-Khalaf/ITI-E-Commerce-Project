@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => { location.href = "../html/myOrders.html"; }, 1200);
     }
 
-    // --- PAYPAL BUTTONS ---
+    // --- PAYPAL BUTTONS with personal and bissnes trail in paypal (Norhan) ---
     paypal.Buttons({
         createOrder: (data, actions) => actions.order.create({
             purchase_units: [{ amount: { value: grandTotalEl.innerText } }]
